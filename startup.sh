@@ -32,7 +32,7 @@ yum -y install nfs-utils
 if [ `hostname` == "Login" ];
 then
 
-sed -i '/^PermitRootLogin[ \t]\+\w\+$/{ s//PermitRootLogin no/g; }' /etc/ssh/sshd_config
+printf '\n%s\n' 'PermitRootLogin no' >>/etc/ssh/sshd_config
 systemctl restart sshd
 echo "/share/home   *(rw,async)" >> /etc/exports
 systemctl enable rpcbind || echo "Already enabled"
