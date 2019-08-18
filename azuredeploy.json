@@ -53,7 +53,7 @@
                     
           "vmScripts": {
             "scriptsToDownload": [
-                "https://raw.githubusercontent.com/grandparoach/sandbox/LCI/startup.sh"
+                "https://raw.github.com/themorey/sandbox/LCI/startup.sh"
             ],
             "commandToExecute": "[concat('bash startup.sh ', parameters('adminUserName'), ' ', parameters('adminPassword'))]"
           }
