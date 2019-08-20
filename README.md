@@ -6,8 +6,7 @@
 This repository will deploy a login node, two compute nodes, and 4 storage nodes for use in the hands-on labs for the LCI Workshop.
 
 Users:  
-The following users have profiles stored on NFS share located on the Login node:
-        root kara tim bob mary rae david joe alice
+Some user accounts (root, kara, tim, bob, mary, rae, david, joe, alice) have profiles stored in a NFS share on the Login node.
 These users also have passwordless SSH to the other nodes in the environment (ie. ssh Compute-0)
 
 ![Workshop Environment](Doc/LCI_environment.png)
